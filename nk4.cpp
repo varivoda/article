@@ -1,6 +1,6 @@
 #include "nk4.h"
 
-#define n 4 // число разбиений Ньютона - Котеса
+#define n 4 // число разбиений Ньютона - Котеса 
 
     double NK4::f(double x){
         return x*x;
