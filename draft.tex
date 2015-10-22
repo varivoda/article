@@ -1,0 +1,109 @@
+\documentclass[a4paper]{article} 
+\usepackage{amsmath, amsthm}
+\usepackage{amsfonts, amssymb}
+\usepackage[cp1251]{inputenc}
+\usepackage[russian]{babel}
+\textwidth=14cm
+
+\textheight=20cm
+
+\begin{document}
+
+\begin{center}
+{\bf Распараллеливание вычисления кратного интеграла}
+\end{center} 
+  
+\begin{center}
+Варивода Иван Алексеевич, студент 4 курса кафедры прикладной кибернетики СПБГУ \verb!varivoda_ivan@mail.ru!  
+\end{center}
+
+\bigskip
+
+\begin{abstract}
+
+Существует огромное количество методов для приближенного вычисления интегралов. Одним из главных требований, предъявляемых к методу является скорость вычисления. Многие годы математики изобретали новые приемы для уменьшения погрешности, выбора разбиения, которые экономили время. Сейчас существуют мощные средства для повышения скорости вычисления, например, распараллеливание вычислений.
+ 
+В данной работе рассматривается распараллеливание вычислений повторного интеграла с помощью средств Open MP.
+
+
+\end{abstract}
+
+Ключевые слова:
+{\it  OpenMp, распараллеливание, вычисление кратного интеграла }
+
+\bigskip
+
+%Пусть $ a, b, c, d $ --- вещественные числа, $n$ --- натуральное число.
+
+%Область  $\Omega$ такова, что $$\Omega = [a,b]\times[c,d]$$  
+
+%Возьмем $$h=\frac{b-a}{n}$$
+
+Пусть $ a, b$ --- вещественные числа, где $b>a$, $n, N$ --- натуральные числа.
+Возьмем  $H=\frac{b-a}{N},  h=\frac{H}{n}.$ 
+Положим $x_{k} = a+kH, k=0,1,\ldots,N.$ 
+
+
+Представляя интеграл в виде
+\begin{equation} \label{1}
+\int_{a}^{b}f(x)dx = \sum_{k=0}^{N-1}\int_{x_{k}}^{x_{k+1}}f(x)dx
+\end{equation} 
+и используя формулу Ньютона-Котеса 
+\begin{equation} \label{2}
+ \int_{x_{k}}^{x_{k+1}}f(x)dx \approx h\sum_{k=0}^{n}B_{k}^{n}f(x_{k}),
+\end{equation}\\
+где \begin{equation} \label{3}
+B_{k}^{n} = \frac{(-1)^{n-k}}{nk!(n-k)!}\int_{0}^{n}\frac{t(t-1)\cdots(t-n)}{t-k}dt
+\end{equation}
+получаем формулу
+\begin{equation} \label{9}
+\int_{a}^{b}f(x)dx \approx H\sum_{k=0}^{n}B_{k}^{n}\sum_{l=0}^{N}f(x_{k}^{l}).
+\end{equation}
+Здесь использовано обозначение $x_{k}^{l} = a+Hl+hk, k=0,1,\ldots,N,  l=0,1,\ldots,n. $
+В силу свойства $B_{j}^{n} = B_{n-j}^{n}$ можем переписать (\ref{3}) при нечетном $n$ в виде 
+\begin{equation} \label{4}
+\int_{a}^{b}f(x)dx \approx H\sum_{k=0}^{\lfloor\frac{n}{2}\rfloor}B_{k}^{n}\sum_{l=0}^{N}(f(x_{k}^{l})+f(x_{n-k}^{l})).
+\end{equation}
+
+При четном $n$ имеем \\
+
+\begin{equation} \label{5}
+\int_{a}^{b}f(x)dx \approx H\sum_{k=0}^{\frac{n}{2}-1}B_{k}^{n}\sum_{l=0}^{N}(f(x_{k}^{l})+f(x_{n-k}^{l})) + HB_{\frac{n}{2}}^{n}\sum_{l=0}^{N}f(x_{\frac{n}{2}}^{l}).
+\end{equation} \\
+
+Из формулы (\ref{3}) получаем значения коэффициентов $B_{k}^{n}$
+
+
+$$\mbox{
+Для n=4:  } \ \ \
+B_{0}^{4}=\frac{7}{90} \qquad B_{1}^{4}=\frac{32}{90} \qquad B_{2}^{4}=\frac{12}{90}$$ 
+$$\ \ \ \ \mbox{Для n=5: } \ \ \ 
+B_{0}^{5}=\frac{19}{288} \qquad B_{1}^{5}=\frac{75}{288} \qquad B_{2}^{5}=\frac{50}{288}$$ 
+
+Поэтому для $n=4$ имеем следующую составную формулу
+
+\begin{equation} \label{6}
+\int_{a}^{b}f(x)dx \approx H\Biggl[\frac{7}{90}\sum_{l=0}^{N}(f(x_{0}^{l})+f(x_{4}^{l})) + \frac{32}{90}\sum_{l=0}^{N}(f(x_{1}^{l})+f(x_{3}^{l}))\Biggr] + \frac{12}{90}\sum_{l=0}^{N}(f(x_{2}^{l})+f(x_{3}^{l})),
+\end{equation}
+а для $n=5$ получаем
+\begin{equation} \label{7}
+\int_{a}^{b}f(x)dx \approx H\Biggl[\frac{19}{288}\sum_{l=0}^{N}(f(x_{0}^{l})+f(x_{5}^{l})) + \frac{75}{288}\sum_{l=0}^{N}(f(x_{1}^{l})+f(x_{4}^{l})) + \frac{50}{288}\sum_{l=0}^{N}(f(x_{2}^{l})+f(x_{3}^{l}))\Biggr].
+\end{equation}
+
+
+Необходимо вычислить  
+
+
+
+
+
+
+
+\centerline{\bf Список литературы}
+
+\bigskip
+
+1. {\it Крылов В.И} название книги.: Изд-во СПБГУ, 19??. - ???с.
+
+
+\end{document}
