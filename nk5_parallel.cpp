@@ -11,7 +11,7 @@ double NK5::f(double x){
 
 void NK5::run(double & result){
 	// Число разбиений Ньютона - Котеса 
-	unsigned n = 4; 
+	unsigned n = 5; 
 		
     //Шаги составного ра-ия и Ньютона - Котеса
     double H = (double)(b - a) / N;
