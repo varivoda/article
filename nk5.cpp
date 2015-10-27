@@ -31,7 +31,6 @@ void NK5::run(double & result){
     }
     sum_1 *= (19.0) / 288;
 
-
     //Вычисление второй суммы
     double sum_2 = 0.0;
     for (unsigned l = 0; l < N; l++){
