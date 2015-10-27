@@ -10,7 +10,7 @@ double NK5::f(double x){
 
 void NK5::run(double & result){
 	// Число разбиений Ньютона - Котеса 
-	unsigned n = 4; 
+	unsigned n = 5; 
 		
     //Шаги составного ра-ия и Ньютона - Котеса
     double H = (double)(b - a) / N;
@@ -30,7 +30,6 @@ void NK5::run(double & result){
         sum_1 += f(x[0][l]) + f(x[5][l]);
     }
     sum_1 *= (19.0) / 288;
-
 
     //Вычисление второй суммы
     double sum_2 = 0.0;
