@@ -1,17 +1,20 @@
-#include "nk5.h"
+#include "nk5_parallel.h"
 #include <omp.h>
+#include <math.h>
 
-NK5::NK5(int a, int b, unsigned N) : a(a), b(b), N(N)
+
+NK5_parallel::NK5_parallel(int a, int b, unsigned N) : a(a), b(b), N(N)
 {
 }
 
-double NK5::f(double x){
-    return x*x;
+double NK5_parallel::f(double x){
+    return sin(x) + pow(x,5);
+//    return x*x;
 }
 
-void NK5::run(double & result){
-	// Число разбиений Ньютона - Котеса 
-	unsigned n = 5; 
+void NK5_parallel::run(double & result){
+    // Число разбиений Ньютона - Котеса
+    unsigned n = 5;
 		
     //Шаги составного ра-ия и Ньютона - Котеса
     double H = (double)(b - a) / N;

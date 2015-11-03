@@ -1,11 +1,13 @@
 #include "nk4.h"
+#include <math.h>
 
 NK4::NK4(int a, int b, unsigned N) : a(a), b(b), N(N)
 {
 }
 
 double NK4::f(double x){
-	return x*x;
+    return sin(x) + pow(x,5);
+//	return  x*x;
 }
 
 void NK4::run(double & result){

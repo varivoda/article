@@ -1,11 +1,13 @@
 #include "nk5.h"
+#include <math.h>
 
 NK5::NK5(int a, int b, unsigned N) : a(a), b(b), N(N)
 {
 }
 
 double NK5::f(double x){
-    return x*x;
+    return sin(x) + pow(x,5);
+//    return x*x;
 }
 
 void NK5::run(double & result){
