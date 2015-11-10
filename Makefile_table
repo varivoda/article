@@ -1,0 +1,3 @@
+all:
+	g++ -fopenmp table_creator.cpp nk4.h nk5.h nk4_parallel.h nk5_parallel.h nk4_parallel.cpp nk5_parallel.cpp nk4.cpp nk5.cpp -o TableProgram
+

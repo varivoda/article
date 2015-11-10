@@ -14,7 +14,7 @@ int main()
     const int N = 1000; // максимальное количество разбиений
     const int M = 1000; // сколько поторов для усреднения
     const int a = 0;
-    const int b = 10;
+    const int b = 100;
     const int THREAD_AMOUNT = 4;
 
 
@@ -107,26 +107,5 @@ int main()
 
     fout.close();
 
-
-
-
-//    NK5 * nk5 = new NK5(a,b,N);
-//    result = 0.0;
-//    start_time = clock();
-//    nk5->run(result);
-//    end_time = clock();
-//    printf("nk5\n");
-//    printf("Result : %0.8f \n", result);
-//    printf("Time : %0.8f \n", double (end_time - start_time)/CLOCKS_PER_SEC);
-
-
-//    NK5_parallel * nk5_parallel = new NK5_parallel(a,b,N);
-//    result = 0.0;
-//    start_time = clock();
-//    nk5_parallel->run(result);
-//    end_time = clock();
-//    printf("nk5_parallel\n");
-//    printf("Result : %0.8f \n", result);
-//    printf("Time : %0.8f \n", double (end_time - start_time)/CLOCKS_PER_SEC);
     return 0;
 }

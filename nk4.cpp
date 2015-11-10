@@ -6,7 +6,9 @@ NK4::NK4(int a, int b, unsigned N) : a(a), b(b), N(N)
 }
 
 double NK4::f(double x){
-    return sin(x) + pow(x,5);
+	return 1.0/(sqrt(cos(x)*cos(x)) + 1.0/(pow(sin(x),3)));
+//	return sin(x) + pow(sqrt(pow(x,2)),3);
+//    return sin(x) + pow(x,5);
 //	return  x*x;
 }
 
