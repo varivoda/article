@@ -11,8 +11,8 @@ using namespace std;
 
 int main()
 {
-    const int N = 1000; // максимальное количество разбиений
-    const int M = 1000; // сколько поторов для усреднения
+    const int N = 100000; // максимальное количество разбиений
+    const int M = 1; // сколько поторов для усреднения
     const int a = 0;
     const int b = 100;
     const int THREAD_AMOUNT = 4;
@@ -35,8 +35,8 @@ int main()
     fout << "amount of threads: " << THREAD_AMOUNT << endl;
     fout << "N \t" << "coef" << endl;
 
-    // конечно пизд каждый раз содавать новый экземляр, но некогда переписывать)
-    for (int n = 10; n < N; n += 50)
+    // конечно каждый раз содавать новый экземляр, но некогда переписывать)
+    for (int n = 100000; n <= N; n += 10000)
     {
         NK4 * nk4 = new NK4(a,b,n);
         NK4_parallel * nk4_parallel = new NK4_parallel(a,b,n);
@@ -76,7 +76,7 @@ int main()
     fout << "N \t" << "coef" << endl;
 
     // конечно пизд каждый раз содавать новый экземляр, но некогда переписывать)
-    for (int n = 10; n < N; n += 50)
+    for (int n = 100000; n <= N; n += 50)
     {
         NK5 * nk5 = new NK5(a,b,n);
         NK5_parallel * nk5_parallel = new NK5_parallel(a,b,n);

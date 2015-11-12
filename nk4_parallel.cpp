@@ -40,26 +40,59 @@ void NK4_parallel::run(double & result){
     double sum_3 = 0.0;
     
     //Начало параллельной области
-    #pragma omp parallel shared(x) reduction(+: sum_1) num_threads(THREAD_AMOUNT)
+ //    #pragma omp parallel shared(x) reduction(+: sum_1) num_threads(THREAD_AMOUNT)
+ //    {
+ //        //Вычисление первой суммы
+
+ //        #pragma omp for
+ //        for (unsigned l = 0; l < N; l++){
+	// 		sum_1 += f(x[0][l]) + f(x[n][l]);
+ //        }
+	// }
+ //        //Вычисление второй суммы
+ //     //   #pragma omp for
+ //        for (unsigned l = 0; l < N; l++){
+ //            sum_2 += f(x[1][l]) + f(x[n-1][l]);
+ //        }
+	
+ //        //Вычисление третьей суммы
+ //      //  #pragma omp for
+ //        for (unsigned l = 0; l < N; l++){
+ //            sum_3 += f(x[2][l]);
+ //        }
+ //    //}
+
+    #pragma omp parallel shared(x) reduction(+: sum_1, sum_2, sum_3) num_threads(THREAD_AMOUNT)
     {
         //Вычисление первой суммы
+        double x_0 = a;
+    	double x_n = H + a;
         #pragma omp for
         for (unsigned l = 0; l < N; l++){
-			sum_1 += f(x[0][l]) + f(x[n][l]);
+			sum_1 += f(x_0) + f(x_n);
+        	x_0 += H;
+        	x_n += H;
         }
-	}
+	
         //Вычисление второй суммы
-     //   #pragma omp for
+        double x_1 = a + h;
+    double x_n1 = (n-1)*h + a;
+       #pragma omp for
         for (unsigned l = 0; l < N; l++){
-            sum_2 += f(x[1][l]) + f(x[n-1][l]);
+            sum_2 += f(x_1) + f(x_n1);
+        	x_1 += H;
+        	x_n1 += H;
         }
 	
         //Вычисление третьей суммы
-      //  #pragma omp for
+            double x_2 = a + 2*h;
+       #pragma omp for
         for (unsigned l = 0; l < N; l++){
-            sum_3 += f(x[2][l]);
+           sum_3 += f(x_2);
+        x_2 += H;
         }
-    //}
+    }
+    
 
     sum_1 *= 7.0 / 90.0;
     sum_2 *= 32.0 / 90.0;
