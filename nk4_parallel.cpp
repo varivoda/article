@@ -38,21 +38,32 @@ void NK4_parallel::run(double & result){
     #pragma omp parallel num_threads(THREAD_AMOUNT)
     {
         //Вычисление первой суммы
+        double x_0 = a;
+        double x_n = H + a;
         #pragma omp for
         for (unsigned l = 0; l < N; l++){
-            sum_1 += f(x[0][l]) + f(x[n][l]);
+            sum_1 += f(x_0) + f(x_n);
+            x_0 += H;
+            x_n += H;
         }
 	
         //Вычисление второй суммы
+        double x_1 = a + h;
+        double x_n1 = (n-1)*h + a;
         #pragma omp for
         for (unsigned l = 0; l < N; l++){
-            sum_2 += f(x[1][l]) + f(x[n-1][l]);
+            sum_2 += f(x_1) + f(x_n1);
+            x_1 += H;
+            x_n1 += H;
         }
 	
         //Вычисление третьей суммы
+
+        double x_2 = a + 2*h;
         #pragma omp for
         for (unsigned l = 0; l < N; l++){
-            sum_3 += f(x[2][l]);
+            sum_3 += f(x_2);
+            x_2 += H;
         }
     }
     sum_1 *= 7.0 / 90.0;
