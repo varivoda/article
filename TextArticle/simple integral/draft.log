@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.9.11)  25 NOV 2015 17:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.9.11)  26 NOV 2015 09:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -254,8 +254,11 @@ LaTeX Font Info:    Try loading font information for T2A+cmtt on input line 18.
 (/usr/share/texlive/texmf-dist/tex/latex/cyrillic/t2acmtt.fd
 File: t2acmtt.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 43.
+Underfull \hbox (badness 10000) in paragraph at lines 25--26
 
+ []
+
+LaTeX Font Info:    Try loading font information for U+msa on input line 43.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
@@ -281,59 +284,64 @@ Underfull \hbox (badness 10000) in paragraph at lines 92--93
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 94--95
-
+Overfull \hbox (16.31017pt too wide) in paragraph at lines 118--118
+[]\T2A/cmtt/m/n/10 #pragma omp parallel reduction(+: sum_1,sum_2,sum_3) num_thr
+eads(THREAD_AMOUNT)[] 
  []
 
-<images/nk4_threads2.jpg, id=21, 859.21pt x 433.62pt>
+<images/nk4_threads2.jpg, id=21, 859.21pt x 433.62pt> [2]
 File: images/nk4_threads2.jpg Graphic file (type jpg)
 
 <use images/nk4_threads2.jpg>
-Package pdftex.def Info: images/nk4_threads2.jpg used on input line 100.
+Package pdftex.def Info: images/nk4_threads2.jpg used on input line 125.
 (pdftex.def)             Requested size: 398.33858pt x 201.02911pt.
 
-<images/nk5_threads2.jpg, id=22, 899.36pt x 508.90125pt>
+<images/nk5_threads2.jpg, id=25, 899.36pt x 508.90125pt>
 File: images/nk5_threads2.jpg Graphic file (type jpg)
 
 <use images/nk5_threads2.jpg>
-Package pdftex.def Info: images/nk5_threads2.jpg used on input line 102.
+Package pdftex.def Info: images/nk5_threads2.jpg used on input line 126.
 (pdftex.def)             Requested size: 398.33858pt x 225.40039pt.
 
-<images/nk45_threads2.jpg, id=23, 991.705pt x 476.78125pt>
-File: images/nk45_threads2.jpg Graphic file (type jpg)
-
-<use images/nk45_threads2.jpg>
-Package pdftex.def Info: images/nk45_threads2.jpg used on input line 103.
-(pdftex.def)             Requested size: 398.33858pt x 191.50937pt.
-
-<images/nk4_threads4.jpg, id=24, 958.58125pt x 512.91624pt>
-File: images/nk4_threads4.jpg Graphic file (type jpg)
-
-<use images/nk4_threads4.jpg>
-Package pdftex.def Info: images/nk4_threads4.jpg used on input line 104.
-(pdftex.def)             Requested size: 398.33858pt x 213.14584pt.
-
-<images/nk5_threads4.jpg, id=25, 1075.01625pt x 503.8825pt>
-File: images/nk5_threads4.jpg Graphic file (type jpg)
-
-<use images/nk5_threads4.jpg>
-Package pdftex.def Info: images/nk5_threads4.jpg used on input line 105.
-(pdftex.def)             Requested size: 398.33858pt x 186.71039pt.
-
-<images/nk45_threads4.jpg, id=26, 884.30376pt x 502.87875pt>
-File: images/nk45_threads4.jpg Graphic file (type jpg)
-
-<use images/nk45_threads4.jpg>
-Package pdftex.def Info: images/nk45_threads4.jpg used on input line 106.
-(pdftex.def)             Requested size: 398.33858pt x 226.52354pt.
-
-Overfull \hbox (15.0pt too wide) in paragraph at lines 100--107
+Overfull \hbox (15.0pt too wide) in paragraph at lines 125--127
 [][]
  []
 
-[2 <./images/nk4_threads2.jpg>] [3 <./images/nk5_threads2.jpg> <./images/nk45_t
-hreads2.jpg>] [4 <./images/nk4_threads4.jpg> <./images/nk5_threads4.jpg>]
-[5 <./images/nk45_threads4.jpg>] (./draft.aux) ) 
+<images/nk45_threads2.jpg, id=26, 991.705pt x 476.78125pt>
+File: images/nk45_threads2.jpg Graphic file (type jpg)
+
+<use images/nk45_threads2.jpg>
+Package pdftex.def Info: images/nk45_threads2.jpg used on input line 130.
+(pdftex.def)             Requested size: 398.33858pt x 191.50937pt.
+
+<images/nk4_threads4.jpg, id=27, 958.58125pt x 512.91624pt>
+File: images/nk4_threads4.jpg Graphic file (type jpg)
+
+<use images/nk4_threads4.jpg>
+Package pdftex.def Info: images/nk4_threads4.jpg used on input line 131.
+(pdftex.def)             Requested size: 398.33858pt x 213.14584pt.
+
+<images/nk5_threads4.jpg, id=28, 1075.01625pt x 503.8825pt>
+File: images/nk5_threads4.jpg Graphic file (type jpg)
+
+<use images/nk5_threads4.jpg>
+Package pdftex.def Info: images/nk5_threads4.jpg used on input line 132.
+(pdftex.def)             Requested size: 398.33858pt x 186.71039pt.
+
+<images/nk45_threads4.jpg, id=29, 884.30376pt x 502.87875pt>
+File: images/nk45_threads4.jpg Graphic file (type jpg)
+
+<use images/nk45_threads4.jpg>
+Package pdftex.def Info: images/nk45_threads4.jpg used on input line 133.
+(pdftex.def)             Requested size: 398.33858pt x 226.52354pt.
+
+Overfull \hbox (15.0pt too wide) in paragraph at lines 130--134
+[][]
+ []
+
+[3 <./images/nk4_threads2.jpg> <./images/nk5_threads2.jpg>] [4 <./images/nk45_t
+hreads2.jpg> <./images/nk4_threads4.jpg>] [5 <./images/nk5_threads4.jpg> <./ima
+ges/nk45_threads4.jpg>] (./draft.aux) ) 
 Here is how much of TeX's memory you used:
  3371 strings out of 493105
  43839 string characters out of 6137072
@@ -341,23 +349,22 @@ Here is how much of TeX's memory you used:
  6776 multiletter control sequences out of 15000+600000
  9759 words of font info for 28 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 37i,5n,24p,400b,169s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvi
-ps/cm-super/cm-super-t2a.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf/fonts/type1/pub
-lic/cm-super/sfbx0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx100
-0.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0900.pfb></usr/share/te
-xmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/publ
-ic/cm-super/sfti1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1000
-.pfb>
-Output written on draft.pdf (5 pages, 401981 bytes).
+ 37i,5n,24p,390b,205s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-sup
+er/cm-super-t2a.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmm
+i10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf/fonts/type1/public/cm-su
+per/sfbx0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1000.pfb></u
+sr/share/texmf/fonts/type1/public/cm-super/sfrm0900.pfb></usr/share/texmf/fonts
+/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-sup
+er/sfti1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1000.pfb>
+Output written on draft.pdf (5 pages, 410583 bytes).
 PDF statistics:
  87 PDF objects out of 1000 (max. 8388607)
  58 compressed objects within 1 object stream
