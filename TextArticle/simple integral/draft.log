@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.9.11)  26 NOV 2015 10:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.9.11)  26 NOV 2015 10:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -297,55 +297,58 @@ File: images/nk4_threads4_time.jpg Graphic file (type jpg)
 Package pdftex.def Info: images/nk4_threads4_time.jpg used on input line 126.
 (pdftex.def)             Requested size: 398.33858pt x 242.77802pt.
 
-<images/nk4_threads2.jpg, id=26, 859.21pt x 433.62pt>
+<images/nk4_threads2.jpg, id=26, 990.70125pt x 363.3575pt>
 File: images/nk4_threads2.jpg Graphic file (type jpg)
 
 <use images/nk4_threads2.jpg>
-Package pdftex.def Info: images/nk4_threads2.jpg used on input line 127.
-(pdftex.def)             Requested size: 398.33858pt x 201.02911pt.
+Package pdftex.def Info: images/nk4_threads2.jpg used on input line 128.
+(pdftex.def)             Requested size: 398.33858pt x 146.09445pt.
 
 <images/nk4_threads4.jpg, id=27, 958.58125pt x 512.91624pt>
 File: images/nk4_threads4.jpg Graphic file (type jpg)
 
 <use images/nk4_threads4.jpg>
-Package pdftex.def Info: images/nk4_threads4.jpg used on input line 128.
+Package pdftex.def Info: images/nk4_threads4.jpg used on input line 129.
 (pdftex.def)             Requested size: 398.33858pt x 213.14584pt.
  [3 <./images/nk4_threads2_time.jpg> <./images/nk4_threads4_time.jpg>]
 <images/nk5_threads2_time.jpg, id=31, 683.55376pt x 410.53375pt>
 File: images/nk5_threads2_time.jpg Graphic file (type jpg)
 
 <use images/nk5_threads2_time.jpg>
-Package pdftex.def Info: images/nk5_threads2_time.jpg used on input line 133.
+Package pdftex.def Info: images/nk5_threads2_time.jpg used on input line 134.
 (pdftex.def)             Requested size: 398.33858pt x 239.24356pt.
 
-<images/nk5_threads4_time.jpg, id=32, 722.7pt x 443.6575pt>
-File: images/nk5_threads4_time.jpg Graphic file (type jpg)
+Overfull \hbox (15.0pt too wide) in paragraph at lines 134--135
+[][] 
+ []
 
-<use images/nk5_threads4_time.jpg>
-Package pdftex.def Info: images/nk5_threads4_time.jpg used on input line 134.
+<images/nk5_threads4_time.jpg, id=32, 722.7pt x 443.6575pt> [4 <./images/nk4_th
+reads2.jpg> <./images/nk4_threads4.jpg>]
+File: images/nk5_threads4_time.jpg Graphic file (type jpg)
+ <use images/nk5_threads4_time.jpg>
+Package pdftex.def Info: images/nk5_threads4_time.jpg used on input line 136.
 (pdftex.def)             Requested size: 398.33858pt x 244.53363pt.
 
-<images/nk5_threads2.jpg, id=33, 899.36pt x 508.90125pt>
+<images/nk5_threads2.jpg, id=36, 899.36pt x 508.90125pt>
 File: images/nk5_threads2.jpg Graphic file (type jpg)
 
 <use images/nk5_threads2.jpg>
-Package pdftex.def Info: images/nk5_threads2.jpg used on input line 135.
+Package pdftex.def Info: images/nk5_threads2.jpg used on input line 138.
 (pdftex.def)             Requested size: 398.33858pt x 225.40039pt.
 
-<images/nk5_threads4.jpg, id=34, 1075.01625pt x 503.8825pt>
+<images/nk5_threads4.jpg, id=37, 1075.01625pt x 503.8825pt>
 File: images/nk5_threads4.jpg Graphic file (type jpg)
 
 <use images/nk5_threads4.jpg>
-Package pdftex.def Info: images/nk5_threads4.jpg used on input line 136.
+Package pdftex.def Info: images/nk5_threads4.jpg used on input line 139.
 (pdftex.def)             Requested size: 398.33858pt x 186.71039pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 133--138
+Overfull \hbox (15.0pt too wide) in paragraph at lines 136--141
 [][]
  []
 
-[4 <./images/nk4_threads2.jpg> <./images/nk4_threads4.jpg>] [5 <./images/nk5_th
-reads2_time.jpg> <./images/nk5_threads4_time.jpg>] [6 <./images/nk5_threads2.jp
-g> <./images/nk5_threads4.jpg>] (./draft.aux) ) 
+[5 <./images/nk5_threads2_time.jpg> <./images/nk5_threads4_time.jpg>] [6 <./ima
+ges/nk5_threads2.jpg> <./images/nk5_threads4.jpg>] (./draft.aux) ) 
 Here is how much of TeX's memory you used:
  3381 strings out of 493105
  44183 string characters out of 6137072
@@ -353,23 +356,23 @@ Here is how much of TeX's memory you used:
  6784 multiletter control sequences out of 15000+600000
  9759 words of font info for 28 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 37i,5n,24p,391b,169s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvip
-s/cm-super/cm-super-t2a.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pf
-b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf/fonts/type1/publ
-ic/cm-super/sfbx0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1000
-.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0900.pfb></usr/share/tex
-mf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/publi
-c/cm-super/sfti1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1000.
-pfb>
-Output written on draft.pdf (6 pages, 432475 bytes).
+ 37i,5n,24p,391b,205s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/t
+exmf/fonts/enc/dvips/cm-super/cm-super-t2a.enc}</usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
+5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/tex
+mf/fonts/type1/public/cm-super/sfbx0900.pfb></usr/share/texmf/fonts/type1/publi
+c/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0900.
+pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texm
+f/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf/fonts/type1/public
+/cm-super/sftt1000.pfb>
+Output written on draft.pdf (6 pages, 436121 bytes).
 PDF statistics:
  92 PDF objects out of 1000 (max. 8388607)
  60 compressed objects within 1 object stream
