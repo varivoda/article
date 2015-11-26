@@ -10,7 +10,7 @@ using namespace std;
 #define _CRT_SECURE_NO_WARNINGS
 
 //Задаем число потоков
-#define THREAD_AMOUNT 2
+#define THREAD_AMOUNT 4
 
 //using namespace std;
 
@@ -190,9 +190,9 @@ int main()
 	int b = 1;
 
     ofstream fout_nk4;
-    fout_nk4.open("nk4_threads_2.txt");
+    fout_nk4.open("nk4_threads_4.txt");
     ofstream fout_nk5;
-    fout_nk5.open("nk5_threads_2.txt");
+    fout_nk5.open("nk5_threads_4.txt");
 
     fout_nk4 << "amount of threads: " << THREAD_AMOUNT << endl;
     fout_nk4 << "N \t" << "time_simple \t" << "time_parallel" << endl;
@@ -228,7 +228,7 @@ int main()
 
 		// printf("Threads = 4 : %0.8f \n", averageParallel_4_Time);
 		// printf("Coefficient : %0.8f \n\n", averageSimple_4_Time / averageParallel_4_Time);
-		fout_nk4 << N << "\t" << averageSimple_4_Time*1000 << "\t" << averageParallel_4_Time*1000 << endl;
+		fout_nk4 << N << "\t" << averageSimple_4_Time*1000000 << "\t" << averageParallel_4_Time*1000000 << endl;
 
 		sum = 0.0;
 		for (int i = 0; i < repetitions; ++i){
@@ -253,7 +253,7 @@ int main()
 
 		// printf("Threads = 4 : %0.8f \n", averageParallel_5_Time);
 		// printf("Coefficient : %0.8f \n\n", averageSimple_5_Time / averageParallel_5_Time);
-		fout_nk5 << N << "\t" << averageSimple_5_Time*1000 << "\t" << averageParallel_5_Time*1000 << endl;
+		fout_nk5 << N << "\t" << averageSimple_5_Time*1000000 << "\t" << averageParallel_5_Time*1000000 << endl;
 	}
 	fout_nk4.close();
 	fout_nk5.close();
